@@ -1,0 +1,34 @@
+# Backup files #
+################
+*.*~
+*.ipynb_checkpoints*
+backup/
+Wood_old*
+
+# Libraries #
+#############
+Beams
+Wood
+Older_Classes
+Old Beams
+
+# Editing Files #
+#################
+MarkedChanges.txt
+Warnings.txt
+Untitled*
+
+# Original Code sources #
+#########################
+nblinkcheck
+
+# HTML versions of the files #
+##############################
+*.html
+!Nail*.html
+
+# LeTeX versions and pdfs #
+###########################
+*.tex
+*.swp
+*.pdf
