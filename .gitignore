@@ -22,10 +22,9 @@ Untitled*
 #########################
 nblinkcheck
 
-# HTML versions of the files #
+# ipynb versions of the files #
 ##############################
-*.html
-!Nail*.html
+*.ipynb
 
 # LeTeX versions and pdfs #
 ###########################
