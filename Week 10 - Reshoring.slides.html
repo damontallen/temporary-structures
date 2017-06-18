@@ -36,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -58,7 +58,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     <!-- End of mathjax configuration -->
 
 <!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -11776,7 +11776,6 @@ ul.typeahead-list > li > a {
 /* Overrides of notebook CSS for static HTML export */
 .reveal {
   font-size: 160%;
-  overflow-y: scroll;
 }
 .reveal pre {
   width: inherit;
@@ -11806,6 +11805,41 @@ ul.typeahead-list > li > a {
 }
 .reveal .progress {
   position: static;
+}
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #727272;
+}
+.reveal .controls .navigate-left.enabled:hover,
+.reveal .controls .navigate-left.enabled.enabled:hover {
+  border-right-color: #dfdfdf;
+}
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #727272;
+}
+.reveal .controls .navigate-right.enabled:hover,
+.reveal .controls .navigate-right.enabled.enabled:hover {
+  border-left-color: #dfdfdf;
+}
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #727272;
+}
+.reveal .controls .navigate-up.enabled:hover,
+.reveal .controls .navigate-up.enabled.enabled:hover {
+  border-bottom-color: #dfdfdf;
+}
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #727272;
+}
+.reveal .controls .navigate-down.enabled:hover,
+.reveal .controls .navigate-down.enabled.enabled:hover {
+  border-top-color: #dfdfdf;
+}
+.reveal .progress span {
+  background: #727272;
 }
 div.input_area {
   padding: 0.06em;
@@ -11840,6 +11874,19 @@ a.anchor-link {
 .rendered_html p {
   text-align: inherit;
 }
+::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar *
+{
+  background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #727272 !important;
+}
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -11854,8 +11901,7 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11863,8 +11909,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11872,8 +11917,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11881,8 +11925,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11894,8 +11937,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11917,8 +11959,7 @@ load in its currently weakened state, then no problem. However, if not you will 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11926,8 +11967,7 @@ load in its currently weakened state, then no problem. However, if not you will 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11939,8 +11979,7 @@ load in its currently weakened state, then no problem. However, if not you will 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11951,8 +11990,7 @@ It is clear that some support should be used when pouring multiple stories, but 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11960,8 +11998,7 @@ It is clear that some support should be used when pouring multiple stories, but 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11973,8 +12010,7 @@ It is clear that some support should be used when pouring multiple stories, but 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11985,8 +12021,7 @@ When the third floor slab is poured it does not support any loads ($0D$) and mus
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11994,8 +12029,7 @@ When the third floor slab is poured it does not support any loads ($0D$) and mus
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12007,8 +12041,7 @@ When the third floor slab is poured it does not support any loads ($0D$) and mus
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12020,8 +12053,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12029,8 +12061,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12042,8 +12073,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12054,8 +12084,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12066,8 +12095,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12079,8 +12107,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12088,8 +12115,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12101,8 +12127,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12114,8 +12139,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12123,8 +12147,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12136,8 +12159,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12154,8 +12176,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12163,8 +12184,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12176,8 +12196,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12187,8 +12206,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12263,8 +12281,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12272,8 +12289,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12285,8 +12301,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12296,8 +12311,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12370,8 +12384,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12379,8 +12392,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12392,8 +12404,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12412,8 +12423,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12486,8 +12496,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12495,8 +12504,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12508,8 +12516,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12519,8 +12526,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12593,8 +12599,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12602,8 +12607,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12615,8 +12619,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12627,8 +12630,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12701,8 +12703,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12722,8 +12723,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12731,8 +12731,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12744,8 +12743,7 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12842,12 +12840,11 @@ As before when the fourth floor is poured it does not carry any load ($0D$) and 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh} & \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$<p>Where:</p>
+$$\Delta P = \left\{\begin{array}{rl}1 &amp; \text{if pouring a new slab},\\P_{0,sh} &amp; \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$<p>Where:</p>
 <ul>
 <li>$\Delta P$ - The load change in the structure that needs to be distributed to other supporting elements</li>
 <li>$P_{0,sh}$ - The starting load of the shore or reshore at the level of action</li>
@@ -12858,8 +12855,7 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12867,8 +12863,7 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12880,8 +12875,7 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12978,19 +12972,18 @@ $$\Delta P = 0.3333 D$$<p>Note, in order to obtain the correct values, there mus
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Next, this change, $\Delta P$, must be distributed to all of the slabs.</p>
 \begin{equation*}
-N_s = \left\{\begin{array}{rl} L_{max} - L_{n} & \textit{ (When adding a new slab)}\\
-L_{max} - L_{n} + 1 & \textit{ (When removing shores or reshores)}\end{array}\right.\tag{2}
+N_s = \left\{\begin{array}{rl} L_{max} - L_{n} &amp; \textit{ (When adding a new slab)}\\
+L_{max} - L_{n} + 1 &amp; \textit{ (When removing shores or reshores)}\end{array}\right.\tag{2}
 \end{equation*}$$\Delta P_{L} = \frac{\Delta P}{N_s}\tag{3}$$\begin{equation*}
-R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L\geq L_n,\\ 
-1 & \text{if }L< L_n, \textit{ (Slabs only carrying self weight)}\\
-P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{4}
+R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} &amp; \text{if }L\geq L_n,\\ 
+1 &amp; \text{if }L&lt; L_n, \textit{ (Slabs only carrying self weight)}\\
+P_{0,L} &amp; \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \end{array} \right. \tag{4}
 \end{equation*}<p>Where:</p>
 <ul>
 <li>$N_s$ - The number of slabs supporting $\Delta P$</li>
@@ -13005,8 +12998,7 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13020,14 +13012,13 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 <p>$R_{s,3} = 0.3333 D + 0.16667 D = 0.5 D$</p>
 <p>for level 2, <em>($L=2 \ge L_n = 2$)</em></p>
 <p>$R_{s,2} = 1.3333 D + 0.16667 D = 1.5 D$</p>
-<p>and since $L_n$ is at level 1 we use the second case in equation 4, <em>($L=1  < L_n = 2$)</em></p>
+<p>and since $L_n$ is at level 1 we use the second case in equation 4, <em>($L=1  &lt; L_n = 2$)</em></p>
 <p>$R_{s,1} = 1 D$</p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13035,8 +13026,7 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13048,8 +13038,7 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13146,8 +13135,7 @@ P_{0,L} & \text{if } L_n=0. \textit{ (Shoring or reshoring all the way down)} \e
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13172,8 +13160,7 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13181,8 +13168,7 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13194,8 +13180,7 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13292,15 +13277,14 @@ $$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Finally, then ending loads $(P_1)$ are just equal to, $R_s$ for the slabs at every level and $P_{sh}$ for everything that is not a slab.  It should be noted that the values listed under $P_1$ will be used for $P_0$ when calculating the results of the next action.</p>
-$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\ 
-                                     P_{sh,L} & \text{if }Item = \text{Shore or Reshore}, \\ 
-                                     0 & \text{if } Item = \text{Empty.} \end{array} \right.\tag{6}$$<p>Where:</p>
+$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} &amp; \text{if }Item = \text{Slab},\\ 
+                                     P_{sh,L} &amp; \text{if }Item = \text{Shore or Reshore}, \\ 
+                                     0 &amp; \text{if } Item = \text{Empty.} \end{array} \right.\tag{6}$$<p>Where:</p>
 <ul>
 <li>$I$ - Item at level L</li>
 <li>$P_{sh,L}$ - Shore load on level L</li>
@@ -13310,8 +13294,7 @@ $$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13319,8 +13302,7 @@ $$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13332,8 +13314,7 @@ $$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13387,21 +13368,19 @@ $$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }Item = \text{Slab},\\
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note, in order to obtain the correct values, there must only be one level of action at a time.  This means that only one value should appear in the $\Delta P$ column for any given action, and it should be written next to the item changing at the level of action.</p>
-$$\Delta P = \left\{\begin{array}{rl}1 & \text{if pouring a new slab},\\P_{0,sh} & \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$\begin{equation*}
-N_s = \left\{\begin{array}{rl} L_{max} - L_{n} & \text{ if pouring a new slab,}\\
-L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right.\tag{2}
-\end{equation*}$$\Delta P_{L} = \frac{\Delta P}{N_s}\tag{3}$$$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} & \text{if }L\geq L_n,\\ 1 & \text{if }L < L_n, \\P_{0,L} & \text{if } L_n=0. \end{array} \right. \tag{4}$$$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} & \text{if }I = \text{Slab},\\ P_{sh,L} & \text{if }I = \text{Shore or Reshore}, \\ 0 & \text{if } I = \text{Empty.} \end{array} \right.\tag{6}$$
+$$\Delta P = \left\{\begin{array}{rl}1 &amp; \text{if pouring a new slab},\\P_{0,sh} &amp; \text{if a shore or reshore is removed}.\end{array} \right.\tag{1}$$\begin{equation*}
+N_s = \left\{\begin{array}{rl} L_{max} - L_{n} &amp; \text{ if pouring a new slab,}\\
+L_{max} - L_{n} + 1 &amp; \text{ if a shore or reshore is removed}.\end{array}\right.\tag{2}
+\end{equation*}$$\Delta P_{L} = \frac{\Delta P}{N_s}\tag{3}$$$$R_{s,L}  = \left\{\begin{array}{rl} P_{0,L} + \Delta P_{L} &amp; \text{if }L\geq L_n,\\ 1 &amp; \text{if }L &lt; L_n, \\P_{0,L} &amp; \text{if } L_n=0. \end{array} \right. \tag{4}$$$$P_{sh,L} = (L_{max} - L + 1)\times 1 D - \sum_{i=L}^{L_{max}} R_{s,i}\tag{5}$$$$P_{1,L,I} = \left\{\begin{array} \\R_{s,L} &amp; \text{if }I = \text{Slab},\\ P_{sh,L} &amp; \text{if }I = \text{Shore or Reshore}, \\ 0 &amp; \text{if } I = \text{Empty.} \end{array} \right.\tag{6}$$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13427,8 +13406,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13436,8 +13414,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13466,7 +13443,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[2]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13527,8 +13506,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13554,7 +13532,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[3]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13635,8 +13615,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13645,8 +13624,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13654,8 +13632,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13667,8 +13644,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13694,7 +13670,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[4]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13776,8 +13754,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13786,8 +13763,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13795,8 +13771,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13808,8 +13783,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13835,7 +13809,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[6]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13937,8 +13913,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13946,8 +13921,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13959,8 +13933,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13986,7 +13959,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[7]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14088,8 +14063,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14098,8 +14072,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14107,8 +14080,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14120,8 +14092,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14147,7 +14118,9 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[10]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14250,8 +14223,7 @@ L_{max} - L_{n} + 1 & \text{ if a shore or reshore is removed}.\end{array}\right
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14262,8 +14234,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14271,8 +14242,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14284,8 +14254,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14311,7 +14280,9 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[12]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14434,8 +14405,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14445,8 +14415,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14454,8 +14423,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14467,8 +14435,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14494,7 +14461,9 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[13]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14618,8 +14587,7 @@ $$0.3333333+1.333333+ 1.333333 = 3$$$$0.5 +1.5 + 1 = 3$$<p>To finish calculating
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14629,8 +14597,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14638,8 +14605,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14651,8 +14617,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14682,7 +14647,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[15]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14823,7 +14790,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[16]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14967,8 +14936,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14994,7 +14962,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[17]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15158,8 +15128,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15185,7 +15154,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[18]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15328,8 +15299,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15355,7 +15325,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[19]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15477,8 +15449,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15504,7 +15475,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[20]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15606,8 +15579,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15633,7 +15605,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[22]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15776,8 +15750,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15803,7 +15776,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[23]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -15925,8 +15900,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15952,7 +15926,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[24]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16054,8 +16030,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16081,7 +16056,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[26]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16224,8 +16201,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16251,7 +16227,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[27]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16373,8 +16351,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16400,7 +16377,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[28]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16502,8 +16481,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16529,7 +16507,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[29]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16611,8 +16591,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16638,7 +16617,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[31]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16847,8 +16828,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16856,8 +16836,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16869,8 +16848,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16897,7 +16875,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[33]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16975,7 +16955,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[34]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -17054,7 +17036,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[36]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -17153,7 +17137,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[37]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -17253,7 +17239,9 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[39]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -17356,8 +17344,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17365,8 +17352,7 @@ $$3 D - 0.583333 D - 1.416667 D - 1 D = 0 D$$<p>This is actually obvious since t
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -17403,8 +17389,7 @@ require(
             progress: true,
             history: true,
 
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+            transition: "slide",
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
@@ -17424,13 +17409,25 @@ require(
 
         Reveal.addEventListener('slidechanged', update);
 
-        var update_scroll = function(event){
-          $(".reveal").scrollTop(0);
-        };
+        function setScrollingSlide() {
+            var scroll = false
+            if (scroll === true) {
+              var h = $('.reveal').height() * 0.95;
+              $('section.present').find('section')
+                .filter(function() {
+                  return $(this).height() > h;
+                })
+                .css('height', 'calc(95vh)')
+                .css('overflow-y', 'scroll')
+                .css('margin-top', '20px');
+            }
+        }
 
-        Reveal.addEventListener('slidechanged', update_scroll);
+        // check and set the scrolling slide every time the slide change
+        Reveal.addEventListener('slidechanged', setScrollingSlide);
 
     }
+
 );
 </script>
 
